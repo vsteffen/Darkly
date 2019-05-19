@@ -1,0 +1,1 @@
+We visit the url "/index.php?page=survey". We check if there is a verification for POST values, for example "42" for one of the select field and we get the flag "03a944b434d5baff05f46c4bede5792551a2595574bcafc9a6e25f67c382ccaa"
