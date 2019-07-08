@@ -1,0 +1,64 @@
+
+-----------------
+DIRB v2.22    
+By The Dark Raver
+-----------------
+
+OUTPUT_FILE: dirb.log
+START_TIME: Thu May 30 10:42:14 2019
+URL_BASE: http://192.168.0.30/
+WORDLIST_FILES: /usr/share/dirb/wordlists/common.txt
+
+-----------------
+
+GENERATED WORDS: 4612
+
+---- Scanning URL: http://192.168.0.30/ ----
+==> DIRECTORY: http://192.168.0.30/admin/
+==> DIRECTORY: http://192.168.0.30/audio/
+==> DIRECTORY: http://192.168.0.30/css/
+==> DIRECTORY: http://192.168.0.30/errors/
++ http://192.168.0.30/favicon.ico (CODE:200|SIZE:1406)
+==> DIRECTORY: http://192.168.0.30/fonts/
+==> DIRECTORY: http://192.168.0.30/images/
+==> DIRECTORY: http://192.168.0.30/includes/
++ http://192.168.0.30/index.php (CODE:200|SIZE:6892)
+==> DIRECTORY: http://192.168.0.30/js/
++ http://192.168.0.30/robots.txt (CODE:200|SIZE:53)
+==> DIRECTORY: http://192.168.0.30/whatever/
+
+---- Entering directory: http://192.168.0.30/admin/ ----
+==> DIRECTORY: http://192.168.0.30/admin/css/
+==> DIRECTORY: http://192.168.0.30/admin/fonts/
++ http://192.168.0.30/admin/index.php (CODE:200|SIZE:1432)
+
+---- Entering directory: http://192.168.0.30/audio/ ----
+
+---- Entering directory: http://192.168.0.30/css/ ----
+==> DIRECTORY: http://192.168.0.30/css/images/
+
+---- Entering directory: http://192.168.0.30/errors/ ----
+
+---- Entering directory: http://192.168.0.30/fonts/ ----
+
+---- Entering directory: http://192.168.0.30/images/ ----
+
+---- Entering directory: http://192.168.0.30/includes/ ----
+
+---- Entering directory: http://192.168.0.30/js/ ----
+
+---- Entering directory: http://192.168.0.30/whatever/ ----
++ http://192.168.0.30/whatever/htpasswd (CODE:200|SIZE:38)
+
+---- Entering directory: http://192.168.0.30/admin/css/ ----
+==> DIRECTORY: http://192.168.0.30/admin/css/images/
+
+---- Entering directory: http://192.168.0.30/admin/fonts/ ----
+
+---- Entering directory: http://192.168.0.30/css/images/ ----
+
+---- Entering directory: http://192.168.0.30/admin/css/images/ ----
+
+-----------------
+END_TIME: Thu May 30 10:42:36 2019
+DOWNLOADED: 64568 - FOUND: 5
