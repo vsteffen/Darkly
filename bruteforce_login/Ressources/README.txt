@@ -1,9 +1,9 @@
 We visit the URL "index.php?page=signin". We have a sign in page. Well, guessing the admin have the username "admin", it's time to bruteforce. For this, i used hydra who is a parallelized login cracker which supports numerous protocols to attack. For us, i used the following command:
-hydra -l admin -P /usr/share/wordlists/rockyou.txt.gz -F -o hydra.log 192.168.0.30 http-get-form /index.php:page=signin&username=^USER^&password=^PASS^&Login=Login:F=images/WrongAnswer.gif
+hydra -l admin -P /root/dictionary/10-million-password-list-top-500.txt -F -o hydra.log x.x.x.x http-get-form '/index.php:page=signin&username=^USER^&password=^PASS^&Login=Login:F=images/WrongAnswer.gif'
 Let's decrypt it :
 -l -> specify the username to attack
 -P -> path to use our wordlist 
-rockyou.txt.gz -> famous wordlist with the most common passwords. Present by default in Kali
+10-million-password-list-top-500.txt -> famous wordlist with the most common passwords (get in Dockerfile)
 -F -> end the session if one request is positive
 -o -> just the output of hydra (you can check it : hydra.log)
 http-get-form -> the protocol we want to use (form use get request -> index.php?page=signin&username=admin&password=shadow&Login=Login)

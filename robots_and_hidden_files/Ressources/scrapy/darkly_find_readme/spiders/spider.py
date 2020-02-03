@@ -10,7 +10,7 @@ readme_dict = {}
 
 class BrickSetSpider(scrapy.Spider):
     name = 'spider42'
-    start_urls = ['http://192.168.0.30/.hidden']
+    start_urls = ['http://x.x.x.x/.hidden']
 
     @classmethod
     def from_crawler(cls, crawler, *args, **kwargs):
