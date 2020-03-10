@@ -1,1 +1,0 @@
-We visit the url "/index.php?page=recover". We check if there is a verification for POST values, we can replace the mail value by default with our mail and we get the flag "1d4855f7337c0c14b6f44946872c4eb33853f40b2d54393fbe94f49f1e19bbb0"
